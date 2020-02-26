@@ -3,12 +3,15 @@ from tkinter import ttk
 
 def funcion_click():
     ventana2=tk.Tk()
-    ventana.title("resultados")
-    ttk.Label("lo sentimos pero no se termino el programa :(")
+    ventana2.title("resultados")
+    ventana2.geometry("200x200")
+    etiqueta3=ttk.Label(ventana2,text="lo sentimos pero no se termino el programa :'(")
+   
+    etiqueta3.grid(column=0,row=0)
 
 ventana= tk.Tk()
 ventana.title("Examen")
-ventana.geometry("500x500")
+ventana.geometry("1000x500")
 # pregunta 1
 etiqueta=ttk.Label(ventana,text='1.Que dice el articulo 4?')
 etiqueta.grid(column=0,row=0)
@@ -59,7 +62,7 @@ radio5 = tk.Radiobutton(ventana, text= "derecho", variable= opcion, value=5)
 radio5.grid(column=4,row=5)
 
 #pregunta 3
-ttk.Label(ventana, text= "que articulo habla sobre el derecho de los niños"). grid(column=1, row=2)
+ttk.Label(ventana, text= "que articulo habla sobre el derecho de los niños"). grid(column=1, row=7)
 var1 = tk.IntVar()
 var2 = tk.IntVar()
 var3 = tk.IntVar()
